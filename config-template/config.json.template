@@ -1,0 +1,12 @@
+{
+    "ntfy": {
+        "address": STRING,
+        "port": INT,
+        "topic": STRING,
+        "authType": STRING,
+        "username": STRING,
+        "password": STRING 
+    },
+    "id": STRING,
+    "refresh": INT
+}

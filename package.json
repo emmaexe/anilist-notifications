@@ -1,0 +1,20 @@
+{
+  "name": "anilist-notifications",
+  "version": "1.0.0",
+  "description": "A notification server for Anilist that uses ntfy.",
+  "author": "emmaexe",
+  "main": "server.js",
+  "dependencies": {
+    "node-fetch": "^2.6.6"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "repository": {
+    "url": "https://github.com/emmaexe/anilist-notifications",
+    "urlApi": "https://api.github.com/repos/emmaexe/anilist-notifications",
+    "urlRaw": "https://raw.githubusercontent.com/emmaexe/anilist-notifications/main/"
+  },
+  "supportServer": "https://discord.gg/v4YrAgBRvz",
+  "license": "GPL-3.0-only"
+}
