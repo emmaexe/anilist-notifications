@@ -47,6 +47,7 @@ module.exports = {
 								'token': tokenfile.token,
 								'expires': tokenfile.expires
 							}
+							console.log('Anilist-notifications ready!')
 							return;
 						}
 					}

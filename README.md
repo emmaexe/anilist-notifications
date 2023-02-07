@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> A notification server for Anilist that uses ntfy.
+> A push notification server for Anilist. Fetches data from the anilist API, parses it and delivers push notifications to your device using ntfy.
 
 ### 🏠 [Repository](https://github.com/emmaexe/anilist-notifications)
 
@@ -20,6 +20,8 @@
 
 - NodeJS 18.x
   - node-fetch
+
+> ℹ️ To recieve push notifications, you need to install ntfy and subscribe to them. More info avaliable [here](https://ntfy.sh/).
 
 ## **Installation**
 

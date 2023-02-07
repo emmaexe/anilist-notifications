@@ -1,7 +1,7 @@
 {
   "name": "anilist-notifications",
-  "version": "1.0.0",
-  "description": "A notification server for Anilist that uses ntfy.",
+  "version": "1.0.1",
+  "description": "A push notification server for Anilist. Fetches data from the anilist API, parses it and delivers push notifications to your device using ntfy.",
   "author": "emmaexe",
   "main": "server.js",
   "dependencies": {
