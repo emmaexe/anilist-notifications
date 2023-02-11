@@ -21,6 +21,54 @@ const query = `query {
 					siteUrl
 		  		}
 			}
+			... on FollowingNotification {
+				id
+			}
+			... on ActivityMessageNotification {
+				id
+			}
+			... on ActivityMentionNotification {
+				id
+			}
+			... on ActivityReplyNotification {
+				id
+			}
+			... on ActivityReplySubscribedNotification {
+				id
+			}
+			... on ActivityLikeNotification {
+				id
+			}
+			... on ActivityReplyLikeNotification {
+				id
+			}
+			... on ThreadCommentMentionNotification {
+				id
+			}
+			... on ThreadCommentReplyNotification {
+				id
+			}
+			... on ThreadCommentSubscribedNotification {
+				id
+			}
+			... on ThreadCommentLikeNotification {
+				id
+			}
+			... on ThreadLikeNotification {
+				id
+			}
+			... on RelatedMediaAdditionNotification {
+				id
+			}
+			... on MediaDataChangeNotification {
+				id
+			}
+			... on MediaMergeNotification {
+				id
+			}
+			... on MediaDeletionNotification {
+				id
+			}
 	  	}
 	}
 }`
