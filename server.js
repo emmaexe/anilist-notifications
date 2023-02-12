@@ -58,9 +58,15 @@ async function main() {
                         if (notificationsFile.indexOf(notifications[i].id) == -1) {
                             let apiNotification = notifications[i];
                             let notification = new notificationBuilder();
-                            if (apiNotification.type == 'AIRING') {
+                            if (apiNotification.type === 'AIRING') {
                                 notification.setTitle(`A new episode of ${apiNotification.media.title.userPreferred} has aired.`)
                                 notification.setBody(apiNotification.contexts[0]+apiNotification.episode.toString()+apiNotification.contexts[1]+apiNotification.media.title.userPreferred+apiNotification.contexts[2])
+                                notification.setIcon(apiNotification.media.coverImage.medium)
+                                notification.setClickEvent(apiNotification.media.siteUrl)
+                                manager.send(notification)
+                            } else if (apiNotification.type === 'RELATED_MEDIA_ADDITION') {
+                                notification.setTitle(`A new ${(apiNotification.media.type) === 'ANIME' ? 'anime' : 'manga'} was announced.`)
+                                notification.setBody(`${apiNotification.media.title.userPreferred} was added to anilist.`)
                                 notification.setIcon(apiNotification.media.coverImage.medium)
                                 notification.setClickEvent(apiNotification.media.siteUrl)
                                 manager.send(notification)

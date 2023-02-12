@@ -59,6 +59,17 @@ const query = `query {
 			}
 			... on RelatedMediaAdditionNotification {
 				id
+				type
+				mediaId
+				context
+				createdAt
+				media: media {
+					id
+					title { userPreferred }
+					type
+					coverImage { color, medium, large, extraLarge }
+					siteUrl
+		  		}
 			}
 			... on MediaDataChangeNotification {
 				id
